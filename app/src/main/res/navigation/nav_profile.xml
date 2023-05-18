@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_profile.xml"
+    app:startDestination="@id/aboutUs">
+
+    <fragment
+        android:id="@+id/aboutUs"
+        android:name="com.example.homegrowneducation.profilePage.AboutUs"
+        android:label="about_us"
+        tools:layout="@layout/about_us" >
+        <action
+            android:id="@+id/action_aboutUs_to_profilePage"
+            app:destination="@id/profilePage" />
+    </fragment>
+    <activity
+        android:id="@+id/profilePage"
+        android:name="com.example.homegrowneducation.profilePage.ProfilePage"
+        android:label="activity_profile"
+        tools:layout="@layout/activity_profile" />
+</navigation>

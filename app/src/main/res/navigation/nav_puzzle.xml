@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_puzzle.xml"
+    app:startDestination="@id/puzzle_title">
+
+    <fragment
+        android:id="@+id/puzzle_easy"
+        android:name="com.example.homegrowneducation.puzzle.Puzzle_easy"
+        android:label="Puzzle_easy" >
+        <action
+            android:id="@+id/action_puzzle_easy_to_puzzle_title"
+            app:destination="@id/puzzle_title" />
+    </fragment>
+    <fragment
+        android:id="@+id/puzzle_normal"
+        android:name="com.example.homegrowneducation.puzzle.Puzzle_normal"
+        android:label="Puzzle_normal" >
+        <action
+            android:id="@+id/action_puzzle_normal_to_puzzle_title"
+            app:destination="@id/puzzle_title" />
+    </fragment>
+    <fragment
+        android:id="@+id/puzzle_hard"
+        android:name="com.example.homegrowneducation.puzzle.Puzzle_hard"
+        android:label="Puzzle_hard" >
+        <action
+            android:id="@+id/action_puzzle_hard_to_puzzle_title"
+            app:destination="@id/puzzle_title" />
+    </fragment>
+    <fragment
+        android:id="@+id/puzzle_title"
+        android:name="com.example.homegrowneducation.puzzle.Puzzle_title"
+        android:label="Puzzle_title" >
+        <action
+            android:id="@+id/action_puzzle_title_to_puzzle_easy"
+            app:destination="@id/puzzle_easy" />
+        <action
+            android:id="@+id/action_puzzle_title_to_puzzle_normal"
+            app:destination="@id/puzzle_normal" />
+        <action
+            android:id="@+id/action_puzzle_title_to_puzzle_hard"
+            app:destination="@id/puzzle_hard" />
+        <action
+            android:id="@+id/action_puzzle_title_to_mainPage"
+            app:destination="@id/mainPage" />
+    </fragment>
+    <activity
+        android:id="@+id/mainPage"
+        android:name="com.example.homegrowneducation.loginRegister.MainPage"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
+</navigation>

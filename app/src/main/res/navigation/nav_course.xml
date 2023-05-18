@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_course.xml"
+    app:startDestination="@id/course_title">
+
+    <fragment
+        android:id="@+id/course_1"
+        android:name="com.example.homegrowneducation.course.Course_1"
+        android:label="Course_1" >
+        <action
+            android:id="@+id/action_course_1_to_course_title"
+            app:destination="@id/course_title" />
+    </fragment>
+    <fragment
+        android:id="@+id/course_2"
+        android:name="com.example.homegrowneducation.course.Course_2"
+        android:label="Course_2" >
+        <action
+            android:id="@+id/action_course_2_to_course_title"
+            app:destination="@id/course_title" />
+    </fragment>
+    <fragment
+        android:id="@+id/course_3"
+        android:name="com.example.homegrowneducation.course.Course_3"
+        android:label="Course_3" >
+        <action
+            android:id="@+id/action_course_3_to_course_title"
+            app:destination="@id/course_title" />
+    </fragment>
+    <fragment
+        android:id="@+id/course_4"
+        android:name="com.example.homegrowneducation.course.Course_4"
+        android:label="Course_4" >
+        <action
+            android:id="@+id/action_course_4_to_course_title"
+            app:destination="@id/course_title" />
+    </fragment>
+    <fragment
+        android:id="@+id/course_5"
+        android:name="com.example.homegrowneducation.course.Course_5"
+        android:label="Course_5" >
+        <action
+            android:id="@+id/action_course_5_to_course_title"
+            app:destination="@id/course_title" />
+    </fragment>
+    <fragment
+        android:id="@+id/course_title"
+        android:name="com.example.homegrowneducation.course.Course_title"
+        android:label="Course_title" >
+        <action
+            android:id="@+id/action_course_title_to_course_1"
+            app:destination="@id/course_1" />
+        <action
+            android:id="@+id/action_course_title_to_course_2"
+            app:destination="@id/course_2" />
+        <action
+            android:id="@+id/action_course_title_to_course_3"
+            app:destination="@id/course_3" />
+        <action
+            android:id="@+id/action_course_title_to_course_4"
+            app:destination="@id/course_4" />
+        <action
+            android:id="@+id/action_course_title_to_course_5"
+            app:destination="@id/course_5" />
+        <action
+            android:id="@+id/action_course_title_to_mainPage"
+            app:destination="@id/mainPage" />
+    </fragment>
+    <activity
+        android:id="@+id/mainPage"
+        android:name="com.example.homegrowneducation.loginRegister.MainPage"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
+</navigation>
